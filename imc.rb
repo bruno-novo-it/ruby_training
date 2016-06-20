@@ -1,11 +1,12 @@
+require './calculo_imc'
 class Imc
 
 	def calculo_imc altura,peso
-		
+
 
 		#Faz o cálculo do peso dividido pela a altura ao quadrado mostrando apenas 2 casas depois da virgula(.round(2))
 		imc = (peso/(altura**2)).round(2)
-		
+
 		if imc<17
 			puts "IMC = #{imc}; Muito abaixo do peso"
 		elsif imc<=18.49
@@ -24,19 +25,18 @@ class Imc
 
 	end
 
-	puts "Informe a sua altura(em metros)(Utilize pontos ao invés de vírgula)"
+	#puts "Informe a sua altura(em metros)(Utilize pontos ao invés de vírgula)"
 	#Captura a altura transformando-a em ponto flutuante(float)
-	altura = gets.to_f
-	
-	puts "Informe o seu peso em kg (utilize pontos ao invés de vírgula)"
+	#altura = gets.to_f
+
+	#puts "Informe o seu peso em kg (utilize pontos ao invés de vírgula)"
 	#Captura o peso transformando-o em ponto flutuante(float)
-	peso = gets.to_f
+	#peso = gets.to_f
 
-	#Para testar a função criasse uma instancia da classe
-	#imc = Imc.new 
-	# e chama a função calculo_imc 	
-	#imc.calculo_imc altura,peso	
+	#Para testar a função, cria-se uma instancia da classe
+	#imc = Imc.new
+	# e chama a função calculo_imc
+	#imc.calculo_imc altura,peso
 
-
+	calculo_imc(1.75,70)
 end
-
