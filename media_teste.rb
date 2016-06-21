@@ -20,10 +20,6 @@ class CalculaMediaTest < Test::Unit::TestCase
     assert_equal("Aluno Reprovado",media.dilema(4))
   end
 
-  def teste_reprovado_3
-    media = Media.new
-    assert_equal("Aluno Reprovado",media.dilema(3))
-  end
 
 
 end
