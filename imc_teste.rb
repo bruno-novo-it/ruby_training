@@ -27,5 +27,5 @@ class CalculaImcTest < Test::Unit::TestCase
     imc = Imc.new
     assert_equal("IMC = #{30.86}; Obesidade I",imc.calculo_imc(1.80,100))
   end
-  
+
 end
