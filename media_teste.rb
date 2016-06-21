@@ -1,5 +1,5 @@
 require 'test/unit'
-require './calculo_media.rb'
+require './media.rb'
 
 
 
