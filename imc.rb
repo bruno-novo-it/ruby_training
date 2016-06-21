@@ -1,11 +1,10 @@
 require './calculo_imc'
+
 class Imc
 
 	def calculo_imc altura,peso
 
-
-		#Faz o cálculo do peso dividido pela a altura ao quadrado mostrando apenas 2 casas depois da virgula(.round(2))
-		imc = (peso/(altura**2)).round(2)
+		calculo_imc(altura,peso)
 
 		if imc<17
 			puts "IMC = #{imc}; Muito abaixo do peso"
@@ -38,5 +37,4 @@ class Imc
 	# e chama a função calculo_imc
 	#imc.calculo_imc altura,peso
 
-	calculo_imc(1.75,70)
 end
